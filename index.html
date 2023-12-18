@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3c8252e41d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">PRIYA KAMDEE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: right; ">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+                        </li>
+                    </ul>
+                    <a href="#contact"><button class="btn">Let's Connect</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="content">
+                <div class="container-content">
+                    <p class="welcome">Welcome to My Portfolio</p>
+                    <h1>Hi,I'M Priya Kamdee</h1>
+                    <p><span>Web Developer</span></p>
+                    <div class="social-icons" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-hackerrank"></i>
+
+                    </div>
+                    <button class="btn1">
+                        Download Resume
+                    </button>
+                </div>
+                <div data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration=" 2500">
+                    <img src="./images/3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me" id="about-me">
+        <div class="container">
+            <h1>About Me</h1>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class=" img-custom col-md-4 " data-aos="zoom-in-up">
+                        <img src="./images/ogirl.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Developer</h5>
+                            <p class="card-text" data-aos="zoom-in-up">I am a dedicated web developer specializing in
+                                Python and the Django
+                                framework for building robust, scalable applications. Proficient in HTML, CSS, and
+                                JavaScript, I craft dynamic, visually appealing interfaces. In backend development, I
+                                excel in creating intricate data models, designing RESTful APIs with Django Rest
+                                Framework, and implementing efficient business logic. On the frontend, I transform
+                                design concepts into interactive, responsive web pages. Committed to staying updated, I
+                                incorporate cutting-edge technologies, ensuring web applications meet high standards of
+                                performance, security, and scalability. I value clean, maintainable code, and thrive on
+                                collaborative problem-solving, contributing to project success.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h1>Skills</h1>
+            <img src="./images/icons8-python.gif">
+
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="cards">
+                <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="./images/blogs.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Study Chat Room</h4>
+                        <p class="card-text">
+                            Crafted a dynamic chatroom app using Django, enabling real-time communication. Implemented
+                            features include user authentication, message storage, and live updates. The intuitive
+                            interface fosters seamless conversations, making it an engaging platform for interactive
+                            discussions
+                        </p>
+                        <button class="btn-p">View More</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="./images/chat.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Blog App </h4>
+                        <p class="card-text">Developed a robust blog app using Django with full CRUD functionality.
+                            Users can Create, Read, Update, and Delete blog posts effortlessly, ensuring a seamless and
+                            dynamic blogging experience.</p>
+                        <button class="btn-p">View More</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="./images/house.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>House Price Prediction Model</h4>
+                        <p class="card-text">Built a Bangalore house prediction model using machine learning. Trained on
+                            extensive data, the model accurately forecasts property prices based on key features,
+                            providing valuable insights for real estate decisions in Bangalore.</p>
+                        <button class="btn-p">View More</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="./images/vaccine.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Infant And Children's Vaccine Tracker</h4>
+                        <p class="card-text"> our child vaccination tracking project ensures seamless monitoring of
+                            immunization schedules. The user-friendly interface allows parents to input and view
+                            vaccination records, receive timely reminders, and access vital information. </p>
+                        <button class="btn-p">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1>Contact Me!</h1>
+            <div class="content">
+                <div class="image" data-aos="zoom-in-down">
+                    <img src="./images/rlgirls.png" style="width: 500px;">
+                </div>
+                <div class="contact-form" data-aos="zoom-in-left">
+                    <div class="row">
+
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Phone" aria-label="Phone">
+                        </div>
+
+                    </div>
+                    <div class="mb-3">
+
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Write your Message"></textarea>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn2 ">Send</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="social-icons">
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-hackerrank"></i>
+
+            </div>
+
+            <div class="cr">
+                <p>Copyright © 2024 Priya Kamdee</p>
+            </div>
+            <div class="mtop">
+                <a href="#home">
+                    <i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
