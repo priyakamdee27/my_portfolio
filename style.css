@@ -151,10 +151,40 @@ z-index: 1;
 }
 
 /*-------- Skills----------*/
+.skills{
+  background-color: #181818;
+  margin-top: 80px;
+
+}
+.skills .container{
+  padding: 20px 100px;
+}
 .skills .container h1 {
   text-align: center;
   color: #ffb366;
 }
+
+ .skills .images{
+  margin-top: 60px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-left: 100px;
+margin-right: 100px;
+}
+
+.skills .images .image{
+  margin: 40px;
+}
+
+.skills img{
+  width: 100px;
+}
+
+
+
+
+
 
 /* -------Projects------- */
 .projects .container h1 {
