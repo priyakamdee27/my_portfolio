@@ -1,15 +1,12 @@
-let sections = document.querySelectorAll("section");
-
-window.onscroll = () => {
-  sections.forEach((sec) => {
-    let top = window.scrolY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-
-    if (top >= offset && top < offset + height) {
-      sec.classList.add("show-animate");
-    } else {
-      sec.classList.remove("show-animate");
-    }
-  });
-};
+var typed = new Typed(".text", {
+  strings: [
+    " Software Developer",
+    " Backend Developer",
+    " Web Developer",
+    " Designer",
+  ],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});
