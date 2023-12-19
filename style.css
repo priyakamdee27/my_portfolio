@@ -8,7 +8,7 @@ body {
   background-color: rgb(0, 0, 0);
   position: fixed;
   width: 100%;
-z-index: 1;
+  z-index: 1;
 }
 .container-fluid .navbar-brand {
   color: white;
@@ -28,7 +28,7 @@ z-index: 1;
 }
 .btn {
   margin-right: 30px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   padding: 15px 20px;
   color: white;
   border-color: white;
@@ -116,11 +116,40 @@ z-index: 1;
   transition: 0.5s ease-in-out;
 }
 
-.container-content .btn1:hover{
+.container-content .btn1:hover {
   color: #fff;
   background-color: #ffb366;
   border: 2px solid #ffb366;
   transition: 0.5s ease-in-out;
+}
+@media (max-width: 768px) {
+  .home {
+    margin-bottom: 200px;
+  }
+  .home .container .content {
+    padding-top: 150px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .home .container .content .container-content {
+    margin: 20px;
+  }
+
+  .home .container img {
+    width: 50%;
+  }
+
+  .container h1 {
+    margin-top: 50px;
+    font-size: 2.5rem;
+  }
+
+  .container-content .social-icons i {
+    margin: 5px;
+    font-size: 1rem;
+  }
 }
 
 /* --------AboutME----------- */
@@ -151,12 +180,11 @@ z-index: 1;
 }
 
 /*-------- Skills----------*/
-.skills{
+.skills {
   background-color: #181818;
   margin-top: 80px;
-
 }
-.skills .container{
+.skills .container {
   padding: 20px 100px;
 }
 .skills .container h1 {
@@ -164,27 +192,22 @@ z-index: 1;
   color: #ffb366;
 }
 
- .skills .images{
+.skills .images {
   margin-top: 60px;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin-left: 100px;
-margin-right: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.skills .images .image{
+.skills .images .image {
   margin: 40px;
 }
 
-.skills img{
+.skills img {
   width: 100px;
 }
-
-
-
-
-
 
 /* -------Projects------- */
 .projects .container h1 {
@@ -195,7 +218,7 @@ margin-right: 100px;
   position: relative;
   overflow: hidden;
   height: 400px;
-  animation: 1s  ease-out 0s 1 slideInBottom ;
+  animation: 1s ease-out 0s 1 slideInBottom;
 }
 .projects .card:hover {
   transform: translateY(20px);
@@ -225,7 +248,7 @@ margin-right: 100px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -240,7 +263,6 @@ margin-right: 100px;
   transition: 0.5s;
 }
 
-
 .projects .container .cards {
   margin-top: 60px;
   padding-bottom: 50px;
@@ -251,17 +273,17 @@ margin-right: 100px;
   background-color: #181818;
 }
 
-.projects p{
+.projects p {
   margin-top: 20px;
 }
 
-.projects .btn-p{
-color: black;
-background-color: white;
-border-radius: 20px;
-border: 2px solid white;
-margin-top: 20px;
-padding: 5px
+.projects .btn-p {
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid white;
+  margin-top: 20px;
+  padding: 5px;
 }
 
 /* ------Contact------ */
@@ -270,23 +292,21 @@ padding: 5px
   background: linear-gradient(#ab66ff7d, #b35a007c);
   padding-bottom: 50px;
   transition: 1s;
-  
 }
+
 .contact .container h1 {
   text-align: center;
   color: #ffb366;
 }
-.contact67 .container .content{
-animation: 1s ease-out 0s 1 slideInLeft;
-}
+
 .contact .container .content {
-  /* animation: slideInFromLeft; */
   display: flex;
+  flex-wrap: wrap; /* Allow content to wrap to the next line on smaller screens */
 }
+
 .contact .container .content .contact-form {
-  justify-content: right;
-  margin-left: 100px;
-  margin-top: 60px;
+  justify-content: center;
+  margin: 60px auto; /* Center the form horizontally */
 }
 
 .contact-form .row {
@@ -297,13 +317,17 @@ animation: 1s ease-out 0s 1 slideInLeft;
   background-color: #ffffff48;
   padding: 20px;
   border-color: transparent;
-  width: 17rem;
+  width: 100%; /* Take up full width on smaller screens */
+  margin-bottom: 15px; /* Add spacing between form fields */
 }
+
 .contact-form .form-control {
-  margin-top: 30px;
   background-color: #ffffff48;
   border-color: transparent;
+  width: 100%; /* Take up full width on smaller screens */
+  margin-top: 15px; /* Add spacing between form fields */
 }
+
 .form-control::placeholder {
   color: rgb(196, 196, 196);
   opacity: 1;
@@ -326,7 +350,19 @@ animation: 1s ease-out 0s 1 slideInLeft;
 }
 
 .image {
-  animation: upDownAnimation 2s infinite; /
+  animation: upDownAnimation 2s infinite;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .contact .container .content .contact-form {
+    margin: 20px auto; /* Adjust margin for smaller screens */
+  }
+
+  .contact-form .row .form-control,
+  .contact-form .form-control {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
 }
 
 .footer {
@@ -351,7 +387,6 @@ animation: 1s ease-out 0s 1 slideInLeft;
   color: #fff;
   border: 2px solid #ffb366;
   background-color: #ffb366;
- 
 }
 
 .footer .container .cr p {
@@ -369,10 +404,6 @@ animation: 1s ease-out 0s 1 slideInLeft;
   animation: upDownAnimation 2s infinite;
 }
 
-
-
-
-
 @keyframes upDownAnimation {
   0% {
     transform: translateY(0);
@@ -384,23 +415,3 @@ animation: 1s ease-out 0s 1 slideInLeft;
     transform: translateY(0);
   }
 }
-
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes slideInBottom {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-/* CSS for the scroll-triggered animation */
-
-
