@@ -161,6 +161,9 @@ body {
     font-size: 1rem;
     margin-top: 20px;
   }
+  .container-content .btn1 {
+    font-size: 1rem;
+  }
 }
 
 /* --------AboutME----------- */
