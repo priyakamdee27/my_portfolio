@@ -4,7 +4,7 @@ body {
 }
 /* -----NavBAR---------- */
 .navbar {
-  padding: 20px;
+  padding: 10px;
   background-color: rgb(0, 0, 0);
   position: fixed;
   width: 100%;
@@ -12,7 +12,6 @@ body {
 }
 .container-fluid .navbar-brand {
   color: white;
-  margin-left: 20px;
 }
 .navbar-brand {
   font-size: 2rem;
@@ -71,14 +70,14 @@ body {
   margin-right: 100px;
   margin-left: 35px;
 }
-.home .container home-image {
+.home .container .home-image {
   right: 0px;
   position: relative;
 }
 .home .container img {
   margin-top: 50px;
   width: 550px;
-  height: inherit;
+  height: auto;
 }
 
 .container-content .welcome {
@@ -138,7 +137,7 @@ body {
     margin-bottom: 10px;
   }
   .home .container .content {
-    padding-top: 150px;
+    padding-top: 100px;
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -147,6 +146,7 @@ body {
 
   .home .container .content .container-content {
     text-align: left;
+    margin: 0;
   }
 
   .home .container .content .container-content p {
@@ -232,8 +232,12 @@ body {
   margin: 40px;
 }
 
-.skills img {
-  width: 100px;
+.skills .images .image img {
+  width: 60px;
+}
+.skills .images .image img:hover {
+  width: 70px;
+  transition: 0.5s ease-in-out;
 }
 @media (max-width: 768px) {
   .skills .container {
