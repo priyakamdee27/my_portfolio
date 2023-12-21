@@ -181,6 +181,7 @@ body {
 /* --------AboutME----------- */
 .about-me {
   background-color: #000000;
+  margin-top: 50px;
 }
 .about-me .container h1 {
   text-align: center;
