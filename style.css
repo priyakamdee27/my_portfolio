@@ -48,6 +48,13 @@ body {
 .navbar-toggler .navbar-toggler-icon {
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1rem;
+    margin: 10px;
+  }
+}
 /* -------Home-------------- */
 .home {
   background-color: #000000;
@@ -134,7 +141,10 @@ body {
   }
 
   .home .container .content .container-content {
-    margin: 20px;
+    text-align: left;
+  }
+  .home .container .content .container-content p {
+    font-size: 1rem;
   }
 
   .home .container img {
@@ -147,7 +157,7 @@ body {
   }
 
   .container-content .social-icons i {
-    margin: 5px;
+    margin: 10px;
     font-size: 1rem;
   }
 }
@@ -267,10 +277,12 @@ body {
   margin-top: 60px;
   padding-bottom: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .projects .container .cards .card {
   background-color: #181818;
+  margin-top: 10px;
 }
 
 .projects p {
@@ -352,16 +364,21 @@ body {
 .image {
   animation: upDownAnimation 2s infinite;
 }
-
+.contact .container .content .image img {
+  width: 500px;
+}
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
+  .contact .container .content .image img {
+    width: 350px;
+  }
   .contact .container .content .contact-form {
-    margin: 20px auto; /* Adjust margin for smaller screens */
+    margin: 20px auto;
   }
 
   .contact-form .row .form-control,
   .contact-form .form-control {
-    padding: 15px; /* Adjust padding for smaller screens */
+    padding: 15px;
   }
 }
 
